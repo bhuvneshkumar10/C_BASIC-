@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int fact(int n);
+
+int main() {
+    printf("factorial of 9 is %d\n", fact(9));
+    return 0;
+
+}
+
+int fact(int n) {
+    if(n==0) {
+        return 1;
+    }
+int factNm= fact(n-1);
+int factN= n*factNm;
+return factN;
+}
+  
